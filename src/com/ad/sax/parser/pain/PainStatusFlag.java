@@ -1,5 +1,13 @@
 package com.ad.sax.parser.pain;
 
+/**
+ * 
+ * @author Aniket Deshkar
+ * 
+ * Bean which contains boolean flag/variable name same as ENUM string 
+ * to create set values of variable dynamically
+ *
+ */
 public class PainStatusFlag {
 
 	private boolean CustomerCreditTransferInitiationV03;

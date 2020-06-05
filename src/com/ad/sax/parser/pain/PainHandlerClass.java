@@ -34,8 +34,8 @@ public class PainHandlerClass extends DefaultHandler {
 
 	@Override
 	public void endElement(String uri, String localName, String qName) throws SAXException {
-		if (qName.equalsIgnoreCase(PainEnum.CustomerCreditTransferInitiationV03.getValue())) {
-			System.out.println("End Element :" + qName + "\n");
+		if (qName.equalsIgnoreCase(PainEnum.PaymentInstructionInformation3.getValue())) {
+			System.out.println("\n-------- End Element :" + qName + "---------\n");
 		}
 	}
 

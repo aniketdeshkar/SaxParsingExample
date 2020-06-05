@@ -1,5 +1,12 @@
 package com.ad.sax.parser.pain;
 
+/**
+ * 
+ * @author Aniket Deshkar
+ *
+ * Enum which holds Screening fields
+ *
+ */
 public enum PainEnum {
 	
 	CustomerCreditTransferInitiationV03("CstmrCdtTrfInitn"),
