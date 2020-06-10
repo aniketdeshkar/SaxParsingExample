@@ -26,6 +26,7 @@ public class PainSaxParserDemo {
 				SAXParser saxParser = factory.newSAXParser();
 				PainHandlerClass userhandler = new PainHandlerClass();
 				saxParser.parse(inputFile, userhandler);
+				System.out.println("\n\n"+userhandler.elementMap);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

@@ -1,6 +1,9 @@
 package com.ad.sax.parser.pain;
 
 import java.lang.reflect.InvocationTargetException;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Stack;
 
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
@@ -13,6 +16,10 @@ public class PainHandlerClass extends DefaultHandler {
 	public PainHandlerClass() {
 		painStatusFlag = new PainStatusFlag();
 	}
+	
+	Map<String,String> elementMap = new LinkedHashMap<String, String>();
+	
+	Stack<String> stack = new Stack<>();
 
 	@Override
 	public void characters(char[] ch, int start, int length) throws SAXException {
@@ -20,7 +27,7 @@ public class PainHandlerClass extends DefaultHandler {
 		for (PainEnum painEnum : PainEnum.values()) {
 			try {
 				if ((boolean) PainStatusFlag.class.getMethod(painEnum.name()).invoke(painStatusFlag)) {
-					System.out.println(painEnum.getValue() + " : " + new String(ch, start, length));
+					System.out.print(new String(ch, start, length));
 					PainStatusFlag.class.getMethod("set" + painEnum.name(), boolean.class).invoke(painStatusFlag,
 							false);
 				}
@@ -34,14 +41,11 @@ public class PainHandlerClass extends DefaultHandler {
 
 	@Override
 	public void endElement(String uri, String localName, String qName) throws SAXException {
-		if (qName.equalsIgnoreCase(PainEnum.PaymentInstructionInformation3.getValue())) {
-			System.out.println("\n-------- End Element :" + qName + "---------\n");
-		}
+		System.out.print("</" + qName + ">");
 	}
 
 	@Override
 	public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
-
 		for (PainEnum painEnum : PainEnum.values()) {
 			try {
 				if (qName.equalsIgnoreCase((painEnum.getValue()))) {
@@ -53,6 +57,8 @@ public class PainHandlerClass extends DefaultHandler {
 				e.printStackTrace();
 			}
 		}
+		System.out.print("<" + qName + ">");
+		stack.push(qName);
 	}
 
 }

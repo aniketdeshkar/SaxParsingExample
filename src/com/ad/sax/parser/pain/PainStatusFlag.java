@@ -4,95 +4,125 @@ package com.ad.sax.parser.pain;
  * 
  * @author Aniket Deshkar
  * 
- * Bean which contains boolean flag/variable name same as ENUM string 
- * to create set values of variable dynamically
+ *         Bean which contains boolean flag/variable name same as ENUM string to
+ *         create set values of variable dynamically
  *
  */
 public class PainStatusFlag {
 
-	private boolean CustomerCreditTransferInitiationV03;
-	private boolean GroupHeader32;
-	private boolean PaymentInstructionInformation3;
-	private boolean PaymentInstructionInformation3_PmtInfId;
-	private boolean PaymentInstructionInformation3_PmtMtd;
-	private boolean PaymentInstructionInformation3_BtchBookg;
-	private boolean PaymentInstructionInformation3_NbOfTxs;
-	private boolean PaymentInstructionInformation3_ReqdExctnDt;
+	private boolean SCREENINGFIELD_1;
+	private boolean SCREENINGFIELD_2;
+	private boolean SCREENINGFIELD_3;
+	private boolean SCREENINGFIELD_4;
+	private boolean SCREENINGFIELD_5;
+	private boolean SCREENINGFIELD_6;
+	private boolean SCREENINGFIELD_7;
+	private boolean SCREENINGFIELD_8;
+	private boolean SCREENINGFIELD_9;
+	private boolean SCREENINGFIELD_10;
+	private boolean SCREENINGFIELD_11;
 
 	public PainStatusFlag() {
 		super();
-		this.CustomerCreditTransferInitiationV03 = false;
-		this.GroupHeader32 = false;
-		this.PaymentInstructionInformation3 = false;
-		this.PaymentInstructionInformation3_PmtInfId = false;
-		this.PaymentInstructionInformation3_PmtMtd = false;
-		this.PaymentInstructionInformation3_BtchBookg = false;
-		this.PaymentInstructionInformation3_NbOfTxs = false;
-		this.PaymentInstructionInformation3_ReqdExctnDt = false;
+		this.SCREENINGFIELD_1 = false;
+		this.SCREENINGFIELD_2 = false;
+		this.SCREENINGFIELD_3 = false;
+		this.SCREENINGFIELD_4 = false;
+		this.SCREENINGFIELD_5 = false;
+		this.SCREENINGFIELD_6 = false;
+		this.SCREENINGFIELD_7 = false;
+		this.SCREENINGFIELD_8 = false;
+		this.SCREENINGFIELD_9 = false;
+		this.SCREENINGFIELD_10 = false;
+		this.SCREENINGFIELD_11 = false;
 	}
 
-	public boolean CustomerCreditTransferInitiationV03() {
-		return CustomerCreditTransferInitiationV03;
+	public boolean SCREENINGFIELD_1() {
+		return SCREENINGFIELD_1;
 	}
 
-	public void setCustomerCreditTransferInitiationV03(boolean customerCreditTransferInitiationV03) {
-		CustomerCreditTransferInitiationV03 = customerCreditTransferInitiationV03;
+	public void setSCREENINGFIELD_1(boolean sCREENINGFIELD_1) {
+		SCREENINGFIELD_1 = sCREENINGFIELD_1;
 	}
 
-	public boolean GroupHeader32() {
-		return GroupHeader32;
+	public boolean SCREENINGFIELD_2() {
+		return SCREENINGFIELD_2;
 	}
 
-	public void setGroupHeader32(boolean groupHeader32) {
-		GroupHeader32 = groupHeader32;
+	public void setSCREENINGFIELD_2(boolean sCREENINGFIELD_2) {
+		SCREENINGFIELD_2 = sCREENINGFIELD_2;
 	}
 
-	public boolean PaymentInstructionInformation3() {
-		return PaymentInstructionInformation3;
+	public boolean SCREENINGFIELD_3() {
+		return SCREENINGFIELD_3;
 	}
 
-	public void setPaymentInstructionInformation3(boolean paymentInstructionInformation3) {
-		PaymentInstructionInformation3 = paymentInstructionInformation3;
+	public void setSCREENINGFIELD_3(boolean sCREENINGFIELD_3) {
+		SCREENINGFIELD_3 = sCREENINGFIELD_3;
 	}
 
-	public boolean PaymentInstructionInformation3_PmtInfId() {
-		return PaymentInstructionInformation3_PmtInfId;
+	public boolean SCREENINGFIELD_4() {
+		return SCREENINGFIELD_4;
 	}
 
-	public void setPaymentInstructionInformation3_PmtInfId(boolean paymentInstructionInformation3_PmtInfId) {
-		PaymentInstructionInformation3_PmtInfId = paymentInstructionInformation3_PmtInfId;
+	public void setSCREENINGFIELD_4(boolean sCREENINGFIELD_4) {
+		SCREENINGFIELD_4 = sCREENINGFIELD_4;
 	}
 
-	public boolean PaymentInstructionInformation3_PmtMtd() {
-		return PaymentInstructionInformation3_PmtMtd;
+	public boolean SCREENINGFIELD_5() {
+		return SCREENINGFIELD_5;
 	}
 
-	public void setPaymentInstructionInformation3_PmtMtd(boolean paymentInstructionInformation3_PmtMtd) {
-		PaymentInstructionInformation3_PmtMtd = paymentInstructionInformation3_PmtMtd;
+	public void setSCREENINGFIELD_5(boolean sCREENINGFIELD_5) {
+		SCREENINGFIELD_5 = sCREENINGFIELD_5;
 	}
 
-	public boolean PaymentInstructionInformation3_BtchBookg() {
-		return PaymentInstructionInformation3_BtchBookg;
+	public boolean SCREENINGFIELD_6() {
+		return SCREENINGFIELD_6;
 	}
 
-	public void setPaymentInstructionInformation3_BtchBookg(boolean paymentInstructionInformation3_BtchBookg) {
-		PaymentInstructionInformation3_BtchBookg = paymentInstructionInformation3_BtchBookg;
+	public void setSCREENINGFIELD_6(boolean sCREENINGFIELD_6) {
+		SCREENINGFIELD_6 = sCREENINGFIELD_6;
 	}
 
-	public boolean PaymentInstructionInformation3_NbOfTxs() {
-		return PaymentInstructionInformation3_NbOfTxs;
+	public boolean SCREENINGFIELD_7() {
+		return SCREENINGFIELD_7;
 	}
 
-	public void setPaymentInstructionInformation3_NbOfTxs(boolean paymentInstructionInformation3_NbOfTxs) {
-		PaymentInstructionInformation3_NbOfTxs = paymentInstructionInformation3_NbOfTxs;
+	public void setSCREENINGFIELD_7(boolean sCREENINGFIELD_7) {
+		SCREENINGFIELD_7 = sCREENINGFIELD_7;
 	}
 
-	public boolean PaymentInstructionInformation3_ReqdExctnDt() {
-		return PaymentInstructionInformation3_ReqdExctnDt;
+	public boolean SCREENINGFIELD_8() {
+		return SCREENINGFIELD_8;
 	}
 
-	public void setPaymentInstructionInformation3_ReqdExctnDt(boolean paymentInstructionInformation3_ReqdExctnDt) {
-		PaymentInstructionInformation3_ReqdExctnDt = paymentInstructionInformation3_ReqdExctnDt;
+	public void setSCREENINGFIELD_8(boolean sCREENINGFIELD_8) {
+		SCREENINGFIELD_8 = sCREENINGFIELD_8;
+	}
+
+	public boolean SCREENINGFIELD_9() {
+		return SCREENINGFIELD_9;
+	}
+
+	public void setSCREENINGFIELD_9(boolean sCREENINGFIELD_9) {
+		SCREENINGFIELD_9 = sCREENINGFIELD_9;
+	}
+
+	public boolean SCREENINGFIELD_10() {
+		return SCREENINGFIELD_10;
+	}
+
+	public void setSCREENINGFIELD_10(boolean sCREENINGFIELD_10) {
+		SCREENINGFIELD_10 = sCREENINGFIELD_10;
+	}
+
+	public boolean SCREENINGFIELD_11() {
+		return SCREENINGFIELD_11;
+	}
+
+	public void setSCREENINGFIELD_11(boolean sCREENINGFIELD_11) {
+		SCREENINGFIELD_11 = sCREENINGFIELD_11;
 	}
 
 }
